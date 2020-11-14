@@ -11,7 +11,7 @@ body {
 .title {
   font-family: "Luckiest Guy", cursive;
   font-size: 5rem;
-  letter-spacing: 0.2rem;
+  text-align: center;
   background: radial-gradient(
     circle,
     #8e86ff 0%,
@@ -25,14 +25,12 @@ body {
   color: transparent;
 }
 
-@media (max-width: 660px) {
-  .title {
-    font-size: 3.5rem;
-  }
+.title span {
+  visibility: hidden;
 }
 
 @media (max-width: 475px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 4rem;
   }
 }

@@ -1,13 +1,19 @@
 const title = document.querySelector(".title");
-const diwali = "HappyDiwali!";
+const characters = title.children;
 let idx = 0;
-const animation = setInterval(() => {
-  if (idx >= diwali.length) {
-    title.textContent = "";
-    idx = 0;
-  }
-  if (diwali[idx] === "D") title.textContent += " ";
+let isFirstIter = true;
 
-  title.textContent += diwali[idx];
+function hideAll() {
+  Array.from(characters).forEach((el) => {
+    el.style.visibility = "hidden";
+  });
+}
+
+const animation = setInterval(() => {
+  if (idx >= characters.length) {
+    idx = 0;
+    hideAll();
+  }
+  characters[idx].style.visibility = "visible";
   idx++;
 }, 300);
