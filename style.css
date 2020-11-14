@@ -10,7 +10,7 @@ body {
 
 .title {
   font-family: "Luckiest Guy", cursive;
-  font-size: 5rem;
+  font-size: 6rem;
   text-align: center;
   background: radial-gradient(
     circle,
@@ -23,6 +23,17 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  background-size: 400%;
+  animation: wave 5s linear infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
 }
 
 .title span {
