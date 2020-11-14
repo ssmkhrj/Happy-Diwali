@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Luckiest+Guy&display=swap");
+
+body {
+  background: rgb(18, 18, 65);
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  background: radial-gradient(
+    circle,
+    #8e86ff 0%,
+    #ed88ff 20%,
+    #6eeeff 40%,
+    #61ff67 60%,
+    #ffb560 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 660px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
